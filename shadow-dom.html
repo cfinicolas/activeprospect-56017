@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF Widget (Demo)</title>
+
+    <!-- Widget Script -->
+    <script>
+      function loadCfWidget() {
+        const script = document.createElement("script");
+        script.src = "./CFWidget.js";
+        script.type = "text/javascript";
+        script.async = true;
+        document.head.appendChild(script);
+      }
+      document.addEventListener("DOMContentLoaded", loadCfWidget);
+    </script>
+    <!-- End Widget Script -->
+  </head>
+  <body>
+    <h2>CF Widget (Rendered in Shadow DOM)</h2>
+    <cf-widget data-use-shadow-dom="true"></cf-widget>
+  </body>
+</html>
